@@ -18,8 +18,8 @@ if uploaded_file:
 
 
 # Intentar detectar período automáticamente
-match = re.search(r"Asistencias?[_\s-]*(\w+)[_\s-]*(\d{4})", uploaded_file.name)
-if match:
+file_name = getattr(uploaded_file, "name", "archivo.xlsx")
+match = re.search(r"Asistencias?[_\s-]*(\w+)[_\s-]*(\d{4})", file_name)if match:
     mes_detectado, anio_detectado = match.groups()
 else:
     mes_detectado, anio_detectado = "", ""
