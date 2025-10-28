@@ -13,7 +13,8 @@ st.markdown("Sube el archivo de asistencias, ingresa el período y genera el inf
 uploaded_file = st.file_uploader("Selecciona el archivo Excel de asistencias (.xlsx)", type=["xlsx"])
 
 if uploaded_file:
-st.success(f"✅ Archivo cargado correctamente: {uploaded_file.name}")
+    st.success(f"✅ Archivo cargado correctamente: {uploaded_file.name}")
+    # el resto del código indentado va aquí...
 
 ```
 # Intentar detectar período automáticamente
