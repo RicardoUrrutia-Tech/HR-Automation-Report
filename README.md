@@ -20,11 +20,3 @@ La herramienta está construida con **Streamlit** y utiliza **Pandas** y **XlsxW
 
 ---
 
-## 🧠 Estructura del reporte generado
-
-### 📄 Hoja “Detalle”
-
-Contiene los registros originales, normalizados y formateados:
-
-* Columnas de fecha y hora con formato Exce
-
