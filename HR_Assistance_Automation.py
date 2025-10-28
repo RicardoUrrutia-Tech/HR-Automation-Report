@@ -16,7 +16,7 @@ if uploaded_file:
     st.success(f"✅ Archivo cargado correctamente: {uploaded_file.name}")
     # el resto del código indentado va aquí...
 
-```
+
 # Intentar detectar período automáticamente
 match = re.search(r"Asistencias?[_\s-]*(\w+)[_\s-]*(\d{4})", uploaded_file.name)
 if match:
@@ -169,4 +169,3 @@ if st.button("Generar Informe"):
             file_name=output_file,
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
-```
