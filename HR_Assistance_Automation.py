@@ -14,12 +14,12 @@ uploaded_file = st.file_uploader("Selecciona el archivo Excel de asistencias (.x
 
 if uploaded_file:
     st.success(f"✅ Archivo cargado correctamente: {uploaded_file.name}")
-    # el resto del código indentado va aquí...
-
 
 # Intentar detectar período automáticamente
 file_name = getattr(uploaded_file, "name", "archivo.xlsx")
-match = re.search(r"Asistencias?[_\s-]*(\w+)[_\s-]*(\d{4})", file_name)if match:
+match = re.search(r"Asistencias?[_\s-]*(\w+)[_\s-]*(\d{4})", file_name)
+
+if match:
     mes_detectado, anio_detectado = match.groups()
 else:
     mes_detectado, anio_detectado = "", ""
